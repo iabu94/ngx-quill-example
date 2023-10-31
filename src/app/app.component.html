@@ -1,0 +1,49 @@
+<select name="" id="" (change)="selectedValue = $event.target.value">
+  <option value="default">Default</option>
+  <option value="activate-rtl">Activate RTL</option>
+  <option value="sanitize-html">Sanitize HTML</option>
+  <option value="no-sanitize-html">No Sanitize HTML</option>
+  <option value="reactive-forms">Reactive Forms</option>
+  <option value="formula">Formula</option>
+  <option value="emoji">Emoji</option>
+  <option value="mention">Mention</option>
+  <option value="bubble-editor">Bubble Editor</option>
+  <option value="no-toolbar">No Toolbar</option>
+  <option value="custom-toolbar">Custom Toolbar</option>
+  <option value="format-json">Format JSON</option>
+  <option value="format-object">Format Object</option>
+  <option value="format-text">Format Text</option>
+  <option value="format-html">Format HTML</option>
+  <option value="preserve-whitespace">Preserve Whitespace</option>
+  <option value="quill-api-embed">Quill API Embed</option>
+  <option value="model-validation">Model Validation</option>
+  <option value="view">View</option>
+  <option value="view-html">View HTML</option>
+  <option value="child">Child</option>
+  <option value="drag-and-drop">Drag and Drop</option>
+</select>
+
+<div>
+  <app-default *ngIf="selectedValue === 'default'"></app-default>
+  <app-activate-rtl *ngIf="selectedValue === 'activate-rtl'"></app-activate-rtl>
+  <app-sanitize-html *ngIf="selectedValue === 'sanitize-html'"></app-sanitize-html>
+  <app-no-sanitize-html *ngIf="selectedValue === 'no-sanitize-html'"></app-no-sanitize-html>
+  <app-reactive-forms *ngIf="selectedValue === 'reactive-forms'"></app-reactive-forms>
+  <app-formula *ngIf="selectedValue === 'formula'"></app-formula>
+  <app-emoji *ngIf="selectedValue === 'emoji'"></app-emoji>
+  <app-mention *ngIf="selectedValue === 'mention'"></app-mention>
+  <app-bubble-editor *ngIf="selectedValue === 'bubble-editor'"></app-bubble-editor>
+  <app-no-toolbar *ngIf="selectedValue === 'no-toolbar'"></app-no-toolbar>
+  <app-custom-toolbar *ngIf="selectedValue === 'custom-toolbar'"></app-custom-toolbar>
+  <app-format-json *ngIf="selectedValue === 'format-json'"></app-format-json>
+  <app-format-object *ngIf="selectedValue === 'format-object'"></app-format-object>
+  <app-format-text *ngIf="selectedValue === 'format-text'"></app-format-text>
+  <app-format-html *ngIf="selectedValue === 'format-html'"></app-format-html>
+  <app-preserve-whitespace *ngIf="selectedValue === 'preserve-whitespace'"></app-preserve-whitespace>
+  <app-quill-api-embed *ngIf="selectedValue === 'quill-api-embed'"></app-quill-api-embed>
+  <app-model-validation *ngIf="selectedValue === 'model-validation'"></app-model-validation>
+  <app-view *ngIf="selectedValue === 'view'"></app-view>
+  <app-view-html *ngIf="selectedValue === 'view-html'"></app-view-html>
+  <app-child *ngIf="selectedValue === 'child'"></app-child>
+  <app-drag-and-drop *ngIf="selectedValue === 'drag-and-drop'"></app-drag-and-drop>
+</div>
